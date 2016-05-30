@@ -13,10 +13,5 @@ function view($path, $vars = null){
  * affiche un message stocké dans la session pour une future requete
  */
 function flash() {
-	$msg = '';
-	if(isset($_SESSION['msg'])) {
-		$msg = $_SESSION['msg'];
-		unset($_SESSION['msg']);
-	}
-	return $msg;
+
 }

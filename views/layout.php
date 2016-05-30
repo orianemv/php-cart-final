@@ -24,11 +24,7 @@
             </div>
         </div>
     </div>
-    <?php if(isset($_SESSION['msg'])) : ?>
-        <div class="ui message">
-            <p><?=flash()?></p>
-        </div>
-    <?php endif; ?>
+    <!-- flash message -->
     <?=$this->section('content')?>
     <details>
         <h2>$_SESSION</h2>
@@ -38,8 +34,5 @@
         <h2>session id</h2>
         <pre><code><?= session_id()?></code></pre>
     </details>
-    <script src="https://code.jquery.com/jquery-1.12.2.min.js"></script>
-    <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.12.2.min.js"><\/script>')</script>
-    <script src="js/main.js"></script>
 </body>
 </html>
