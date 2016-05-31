@@ -15,9 +15,19 @@
 		<div class="column">
 			<table class="ui table compact">
 				<!-- une boucle ! -->
-			</table>
+
+		<?php
+		foreach ($products as $product) : ?>
+		<div class="ui card">
+			<img src="<?=$product->picture?>" />
+			<h2><?=$product->name?></h2>
+			<p><?=$product->price?> euros</p>
+			<button class="ui button">add to cart</button>
 		</div>
+		<?php endforeach?>
+		</table>
 	</div>
+</div>
 
 
 </div>
