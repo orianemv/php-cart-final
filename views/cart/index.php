@@ -22,7 +22,7 @@
 			<img src="<?=$product->picture?>" />
 			<h2><?=$product->name?></h2>
 			<p><?=$product->price?> euros</p>
-			<button class="ui button">add to cart</button>
+			<button class="ui button">remove from cart</button>
 		</div>
 		<?php endforeach?>
 		</table>

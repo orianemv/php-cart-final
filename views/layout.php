@@ -11,8 +11,8 @@
     <link rel="stylesheet" href="/semantic/semantic.min.css">
     <!-- Place favicon.ico in the root directory -->
 
-    <link rel="stylesheet" href="css/normalize.css">
-</head>
+<!--     <link rel="stylesheet" href="css/normalize.css">
+ --></head>
 <body>
     <div class="ui menu">
         <div class="item header">Ma super boutique</div>
@@ -20,7 +20,7 @@
         <a class="item" href="/cart">Mon panier (<?=Cart::count()?> - <?=Cart::total()?> &euro;)</a>
         <div class="right menu">
             <div class="item">
-                <a href="/logout" class="ui primary button">Logout</a>
+                <a href="/logout" id="logout" class="ui primary button">Logout</a>
             </div>
         </div>
     </div>

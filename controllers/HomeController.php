@@ -1,5 +1,5 @@
 <?php namespace App\Controllers;
-
+session_start();
 use App\Controllers\Controller;
 use Silex\Application;
 use Symfony\Component\HttpFoundation\Request;
@@ -12,7 +12,9 @@ class HomeController extends Controller {
 	}	
 
 	public function getLogout(Application $app){
-		 Cart::destroy();
+
+		// Cart::destroy();
 	}
 
+//		return $app->redirect('/');
 }
