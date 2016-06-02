@@ -15,7 +15,6 @@ class CartController extends Controller {
 				$product = Product::find($request->get('product_id'));
 				Cart::add($product->toArray());
 				Cart::get();
-				Cart::total();
 				return $app->redirect('/');
 			
 			// 	if (Request::isMethod('post')){

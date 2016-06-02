@@ -30,12 +30,12 @@ class Cart {
 		// $cartCount->count();
 	}
 	public function total(){
-		// $products = self::get();
-		// $total =[]; 
-		// foreach ($product as $prices) {
-		// 	array_push($total, $prices->price);
-		// }
-		// return array_sum($total);
-		//$totalCart = Cart::getTotal();
+		$product = self::get();
+		$total =[]; 
+		foreach ($product as $prices) {
+			array_push($total, $prices->price);
+		}
+		return array_sum($total);
+		$total = Cart::getTotal();
 	}
 }
