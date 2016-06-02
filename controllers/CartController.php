@@ -12,9 +12,10 @@ class CartController extends Controller {
 	}	
 
 	public function postAdd(Request $request, Application $app){
-				$products = Product::find($request->get('id'));
-				Cart::add($product=>toArray());
+				$product = Product::find($request->get('product_id'));
+				Cart::add($product->toArray());
 				Cart::get();
+				Cart::total();
 				return $app->redirect('/');
 			
 			// 	if (Request::isMethod('post')){

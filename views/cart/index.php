@@ -22,9 +22,10 @@
 			<img src="<?=$product->picture?>" />
 			<h2><?=$product->name?></h2>
 			<p><?=$product->price?> euros</p>
+			<input type="hidden" value="<?$product->id?>" name="product_id" />
 			<button class="ui button">remove from cart</button>
 		</div>
-		<?php endforeach?>
+		<?php endforeach;?>
 		</table>
 	</div>
 </div>
