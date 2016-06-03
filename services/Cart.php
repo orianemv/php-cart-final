@@ -38,4 +38,11 @@ class Cart {
 		return array_sum($total);
 		$total = Cart::getTotal();
 	}
+	public function checkout(){
+		foreach ($users as $user) {
+			User::create($user);
+		}
+		return redirect('/cart/sold');
+	}
+
 }

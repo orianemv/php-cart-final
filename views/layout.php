@@ -20,7 +20,7 @@
         <a class="item" href="/cart">Mon panier (<?=Cart::count()?> - <?=Cart::total()?> &euro;)</a>
         <div class="right menu">
             <div class="item">
-                <a href="/logout" id="logout" class="ui primary button">Logout</a>
+                <a href="/logout" id="logout" class="ui medium blue button">Logout</a>
             </div>
         </div>
     </div>

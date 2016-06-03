@@ -8,8 +8,8 @@
 				<div class="item">
 					<a href="/cart/checkout" class="ui button">Finaliser ma commande</a>
 				</div>
-				<h4 class="item header">Montant total : ??? &euro;</h4>
-				<h4 classs="item header">Nombre produits : ???</h4>
+				<h4 class="item header">Montant total : <?=Cart::total()?> &euro;</h4>
+				<h4 classs="item header">Nombre produits : <?=Cart::count()?></h4>
 			</div>
 		</div>
 		<div class="column">
@@ -23,8 +23,8 @@
 			<h2><?=$product->name?></h2>
 			<p><?=$product->price?> euros</p>
 			<input type="hidden" value="<?$product->id?>" name="product_id" />
-			<button class="ui button">remove from cart</button>
-		</div>
+<!-- 			<button class="ui button">remove from cart</button>
+ -->		</div>
 		<?php endforeach;?>
 		</table>
 	</div>

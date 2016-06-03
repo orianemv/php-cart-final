@@ -16,7 +16,6 @@ class CartController extends Controller {
 				Cart::add($product->toArray());
 				Cart::get();
 				return $app->redirect('/');
-			
 			// 	if (Request::isMethod('post')){
 			// 	$order_product = Request::get('id');
 			// 	$products = Product::find($id);
@@ -28,3 +27,5 @@ class CartController extends Controller {
 	 }	
 
 }
+
+
